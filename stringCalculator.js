@@ -6,7 +6,7 @@ export function add(numbers) {
 
     const nums = numbersToAdd.split(delimiter)
     .map(str => str.trim())
-    .filter(str => str !== '')
+    .filter(str => str !== '') 
     .map(Number);
 
     return nums.reduce((sum, num) => sum + num, 0);
